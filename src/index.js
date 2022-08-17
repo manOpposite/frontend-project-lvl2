@@ -18,9 +18,7 @@ const genDiff = (filepath1, filepath2) => {
   const result = arr.reduce((acc, key) => {
     let accumulate = acc;
     const hasPropertyObj1 = Object.hasOwn(obj1, key);
-    console.log(hasPropertyObj1);
     const hasPropertyObj2 = Object.hasOwn(obj2, key);
-    console.log(hasPropertyObj2);
     if (hasPropertyObj1 && hasPropertyObj2) {
       if (obj1[key] === obj2[key]) {
         accumulate += `\n    ${key} : ${obj1[key]}`;
