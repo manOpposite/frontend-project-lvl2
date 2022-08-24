@@ -5,3 +5,4 @@
 <a href="https://codeclimate.com/github/manOpposite/frontend-project-lvl2/test_coverage"><img src="https://api.codeclimate.com/v1/badges/2c328ff1e7f6022f8851/test_coverage" /></a>
 
 [![asciicast](https://asciinema.org/a/YlO9shWWdkO6cayr7aVu8DIJH.svg)](https://asciinema.org/a/YlO9shWWdkO6cayr7aVu8DIJH)
+[![asciicast](https://asciinema.org/a/1p4FQpTUxiXubDGiEIwplvqKF.svg)](https://asciinema.org/a/1p4FQpTUxiXubDGiEIwplvqKF)

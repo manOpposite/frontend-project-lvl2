@@ -1,6 +1,5 @@
-import { readFileSync } from 'node:fs';
-import path from 'node:path';
 import _ from 'lodash';
+import parsers from './parsers.js';
 
 const resultArrayOfKeys = (obj1, obj2) => {
   const arr1 = Object.keys(obj1);
@@ -12,8 +11,8 @@ const resultArrayOfKeys = (obj1, obj2) => {
 };
 
 const genDiff = (filepath1, filepath2) => {
-  const obj1 = JSON.parse(readFileSync(path.resolve(filepath1), 'utf-8'));
-  const obj2 = JSON.parse(readFileSync(path.resolve(filepath2), 'utf-8'));
+  const obj1 = parsers(filepath1);
+  const obj2 = parsers(filepath2);
   const arr = resultArrayOfKeys(obj1, obj2);
   const result = arr.reduce((acc, key) => {
     let accumulate = acc;
